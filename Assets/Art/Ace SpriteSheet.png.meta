@@ -1,0 +1,3070 @@
+fileFormatVersion: 2
+guid: 5684367010b12de439c12e386bb62fda
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ace SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2282
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e999cb6e3d85b48b5926163e4ae9c7
+      internalID: -1534751170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 2282
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8775f8a41981a8d41a907cc54c930cf7
+      internalID: -1495472896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 2282
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35991a055f2c9d544a14ebbbdf2b3695
+      internalID: 1270758171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 2282
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e937c4bba40b942b1fb352def876ba
+      internalID: 1760557754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2282
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148ea8bafa95fa74fb95e739aeb0f138
+      internalID: 1856766955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 2282
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d564a4eca4dd5f43b1b9e7e8b6527a4
+      internalID: -1683865680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 2282
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248df3cb18968ba4e896af0c7d7655b6
+      internalID: -144948598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 2282
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf10b910a05d6d64a90b3feb123cec87
+      internalID: -412393051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 2279
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0277a5027bf4dd84a8ac9c9baf32f69e
+      internalID: -607944489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 2279
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c9cc7485bacdb4387ab4e2651630f9
+      internalID: 209792811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 2268
+        width: 373
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67c37f4b9679304e88b2f4d6a5e727f
+      internalID: 408207410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2127
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e96eb02a4a831e4eb734fed96a69c73
+      internalID: -1404484760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 2127
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be17679c4b1607549ac63e64cdbe7630
+      internalID: 2119046498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 2127
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90305f69fd581e94a9e3f9829f1a2a47
+      internalID: 1755757729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 2127
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305820ee856da80418c7b8b9cac1f329
+      internalID: 1139818982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 2127
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0c989ae12852e4db3a13bec6cceeee
+      internalID: 137280294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 2127
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f50e86f98060244b22b33ff4b1e424
+      internalID: 1496009217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 2127
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd62566230bd2c4a850f386759fb063
+      internalID: 1911142921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 2127
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c46a083f17319840bb59569a5470436
+      internalID: 420397266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 2127
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27db1eb77d33a94b8941c698388207e
+      internalID: 1888795734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 2127
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5ca14c60540a546b8ba5648729fdac
+      internalID: 1461544386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 2127
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e4ed02b5679cf4ba5db6276723454c
+      internalID: -668480451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 2127
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a68b8dad11ceb408e32e9e957a6c49
+      internalID: -1201142383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 2093
+        width: 312
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8985b37e8969f6f468ae224d2d9d70b4
+      internalID: -1044333764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 2109
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e3bccff9a2396478e513b5b72ff489
+      internalID: -255482088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 1940
+        width: 158
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b6cd7e39ca5bb479ad6bdf5fbd97fb
+      internalID: 1218257324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1941
+        width: 132
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d426ba527bd6ce458c693367d570bda
+      internalID: 1348895161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1941
+        width: 132
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745d10ee261390144a7146ddf18e47d1
+      internalID: -1987688558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1941
+        width: 132
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a881b4070d7aa644ca517251e40a80d4
+      internalID: -568644608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1941
+        width: 132
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574cf7270e789aa4b81d140833b3c4db
+      internalID: -415630483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1940
+        width: 196
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92328edda672105439cc81b721357d3d
+      internalID: -978391950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1940
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069504828ffa1ae4588218f66bf5b109
+      internalID: -407262289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 1940
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d778ad3cd03a8ff419b9b4d25f382765
+      internalID: -489463772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1940
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58bfef37ae5fce41ba976f7bcb88fdd
+      internalID: -1315652864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 1940
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cdec6e00cdb1274f938be378ed1c63c
+      internalID: -801536002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1928
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f6d67f03c67974d81a2f91cbbd1382
+      internalID: 760477306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1928
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27e09ac56e8f0b4c835b9394e512620
+      internalID: 1438502289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1917
+        width: 440
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7b4ffa51c9e2b4691adcf46c6fa5ad
+      internalID: -1868563136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1776
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba69680df531104caa0af02f32f0356
+      internalID: 890315688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1770
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e929a057d72d4394e90bf40115c43e52
+      internalID: -1317285252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1770
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe39ac69f9eb4c4d9c5ee9fea69da2f
+      internalID: 1591343257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1770
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad494bfb74a9ed24cab17727279f4515
+      internalID: 42454187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1770
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6df25617b3c384f8a08ce0eabb5e41
+      internalID: 131806099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 1776
+        width: 125
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5427d48ebd22b44aa60e514c36f82a1
+      internalID: 1760985985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 1776
+        width: 125
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b2742233628f74da82f3bd28105bb8
+      internalID: 1366164726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 1776
+        width: 125
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7f859b9db382348af1a5361caf8d52
+      internalID: -1953198181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1614
+        width: 133
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111dcc5c8539e634082ef74c2739f648
+      internalID: -817767745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1614
+        width: 133
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbd80babbfe17d4e8fe77c0e0738636
+      internalID: -1939730469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1614
+        width: 133
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c785c529b398ec4a80d116d9f318b91
+      internalID: 2020587239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1614
+        width: 133
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff047cf965382f34d8fea1f92dadacbe
+      internalID: 1601960238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1614
+        width: 133
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5538c0a0c8aa52439f179bde1984dfe
+      internalID: -1154513925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1614
+        width: 133
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d1f5a2c8fa2f446bee73b50e4375b1
+      internalID: -1502999346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1614
+        width: 146
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdd4d4ff0eeb6244b14307290b489f8
+      internalID: 273258607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1614
+        width: 133
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35e095e01899ea419879614dc15a780
+      internalID: -1166820007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 1614
+        width: 133
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd4c6f2f8551ca4c8f41b439114a88b
+      internalID: 1712275797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 1602
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a88140f9a2ea314dbe0e9722efffebd
+      internalID: 1514824855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 1602
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d8d9c7de0af9147986bb4d8a1f66d9
+      internalID: -478381466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 1591
+        width: 510
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b786d6b73784f7f44af63c56f59d77fd
+      internalID: -358784825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1455
+        width: 188
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1a625fb626a9243a4108247bd6ffe2
+      internalID: 160204038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1453
+        width: 184
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0bc091d0cd6e84286702ece57872b9
+      internalID: 1979543965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1453
+        width: 184
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14482061c87038d4fba3e3233316ccb6
+      internalID: 1969649913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1453
+        width: 184
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b599a257bc0c13148ac84eb62cda7ba2
+      internalID: 2073419966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 1453
+        width: 184
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8872f9fc59e9fcb4a9bd72605e14069a
+      internalID: -227545342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 1453
+        width: 184
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606415e0f26a9e4409f0467ff0464625
+      internalID: 1367281750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 1453
+        width: 184
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f76905f2417ee245afd0173022ac53b
+      internalID: -1942747906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1453
+        width: 184
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e2e1dc6552400459f1186a34992313
+      internalID: 1274849556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1272
+        width: 170
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03516028febf9147a92e68bd45b6fab
+      internalID: -1700854180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_67
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1272
+        width: 248
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e11d87caa45b564ba9947d80693ca78
+      internalID: 2046443721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1272
+        width: 248
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043bbdcff8df22a459d814ac562f67e5
+      internalID: -1289340933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_69
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 1272
+        width: 248
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299cc3093e7a5cd4e9ac02df07045580
+      internalID: 1285612063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_70
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1272
+        width: 248
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93fbaf083080b84ea7ddb005eac7143
+      internalID: -325065868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_71
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 1272
+        width: 248
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e53d94fe32c600459755a329c06bd44
+      internalID: -1911394178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_72
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1100
+        width: 248
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7746cd981b33b454ab41737808c69916
+      internalID: 1392905000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_73
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1100
+        width: 248
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b1d7d19aedb2f448b990c74b99cb36
+      internalID: -531204168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_74
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1100
+        width: 248
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2bce60a926dfe41bb9020c00956965
+      internalID: -1156058468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_75
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1100
+        width: 248
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2450a6b8efe88d14698e36b33a5e3293
+      internalID: 2138279545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_76
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1086
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2cd535675e25404ca3b95b181a4fb67
+      internalID: 1856236988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_77
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1086
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b913b9983ea8ab34782375f67b0e2ccd
+      internalID: 416476600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_78
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1075
+        width: 496
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165ca17f91058c746b9cb8cb68246f15
+      internalID: 967710892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_79
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 922
+        width: 168
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e588789d1f46d45a76ce55fd9007f0
+      internalID: -465701761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_80
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 922
+        width: 168
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d926a6d2ab46a4a9f68b600a77f702
+      internalID: -1116045160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_81
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 922
+        width: 167
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2323e9efd4642ac4291980d6234ae284
+      internalID: 249506247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_82
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 922
+        width: 167
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52239c721ceed1841b442ad138c5da6a
+      internalID: -157057698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_83
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 922
+        width: 168
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74d12e26202139499897b03f14a6230
+      internalID: -1234175334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_84
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 922
+        width: 168
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18be78f1edbe87643a4970e51da0048c
+      internalID: 158607957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_85
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 914
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a34c0b520064b94ba5038ef6746cfa9
+      internalID: 1343783523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_86
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 914
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c1dc2f551b93d41b10c471f4100d2e
+      internalID: 1175571988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_87
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 903
+        width: 439
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7394888ce472a4d8c60a05589d0c1b
+      internalID: 1287995694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_88
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 750
+        width: 152
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af09f87de99b764bb80e4193791bef0
+      internalID: 2111968415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_89
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 750
+        width: 152
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc40e759381be547a156f4ff9ffae0f
+      internalID: 2072128149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_90
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 750
+        width: 152
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9759aff75708542819521a6f52bb41
+      internalID: 1276933729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_91
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 750
+        width: 152
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3192cd0038fc64aa865812450db497
+      internalID: -1534589272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_92
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 750
+        width: 152
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8afe655dface641409f439ab2dc0b7f4
+      internalID: -759796547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_93
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 750
+        width: 152
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2397a3f0bc63e8941a586cdf5b5c1f8e
+      internalID: -1994021431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_94
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 749
+        width: 152
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75de369465c9ce449a978f0064e14588
+      internalID: -889344074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_95
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 749
+        width: 152
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b43e357ab717c408931a09c43860e4
+      internalID: 326762828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_96
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 584
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834c7a9615705fa4ea783b02a17f6710
+      internalID: 960246405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_97
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 584
+        width: 125
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735d282cb903ab34dae5179f2e7ac388
+      internalID: 1968284539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_98
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 584
+        width: 125
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3855735cc371fe40866645c99260c71
+      internalID: 1126739959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_99
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 584
+        width: 125
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b90553dba75084384f42ff4d76e8c6
+      internalID: 1435491957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_100
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 584
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2443c48c2329c49a1530d9daa23024
+      internalID: -150546473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_101
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 584
+        width: 125
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e516f9c0144e443b63cbbf787be033
+      internalID: 121313544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_102
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 584
+        width: 125
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69014e02d4210e849936a3a2a8cf52a5
+      internalID: -1979452580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_103
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 584
+        width: 125
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad82577946077e41ab5a859ed168a9b
+      internalID: 1325935008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_104
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 572
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097717d528547c948afef38f02ba3c79
+      internalID: -544262854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_105
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 572
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8e4cc2d51cdd1438fb79b137aa343c
+      internalID: -379457469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_106
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 561
+        width: 439
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336c4b8cb93eba342854babe46ca4c4b
+      internalID: -1122612382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_107
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 402
+        width: 162
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c882a3a38e30824389d3fb9566f9905
+      internalID: -372926980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_108
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 402
+        width: 162
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7a1d72700611645a6dbfb419b59375
+      internalID: 975449760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_109
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 402
+        width: 162
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3151e4859ecf14bb50cff2628b1cc8
+      internalID: 1405144911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_110
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 402
+        width: 162
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1dd6bec24aa2f48834987c5ceb0d04
+      internalID: -885032420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_111
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 402
+        width: 162
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7362c90295172124f8958d198357ce4e
+      internalID: -1122427495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_112
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 402
+        width: 162
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca94858481252848913a8f6bc0f8515
+      internalID: -240422312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_113
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 402
+        width: 162
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4171658a765078a4bb79b866801f3258
+      internalID: 1751555332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_114
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 402
+        width: 162
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030e0f74bf5f1b347a32eb2f3840c5a5
+      internalID: -2017839221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_115
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 228
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26a9bc14ccd99846934b8be85d107da
+      internalID: 1678047124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_116
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 228
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328e417173cefaa4abbc512fdc29cbcb
+      internalID: -1208800945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_117
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 228
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318f36bd7530b754da5b2b81f55027ce
+      internalID: -362536074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_118
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 228
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85dfb31b27a1d24ca935f3e59482574
+      internalID: 1840161520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_119
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 228
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a549beb1ad03f134ea56627b1ac15557
+      internalID: -438486801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_120
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 228
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91fc815e03a5554b8ae6758a324d809
+      internalID: 1016483440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_121
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 228
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47b30255de61fc4dbe058b7ef6fc0c1
+      internalID: -1459154720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_122
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 228
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934233d18daab3048bd0c86662801803
+      internalID: -1159473269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_123
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 217
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdef75a2aa9c2e4691a358aba656e4a
+      internalID: -530768019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_124
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 217
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca67a6d79df31d48b50ab40ac409f83
+      internalID: -1853096813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_125
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 206
+        width: 572
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6960411a5776c9440baf9553ef19e94e
+      internalID: 1643421997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_126
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 10
+        width: 179
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0418a946650131d4ea2bc08b7bd9d9c7
+      internalID: 503160135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_127
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 10
+        width: 179
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab4a025a49731749bfa6781041baca8
+      internalID: 1806105506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_128
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 10
+        width: 179
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c991322b41dce47a2aef2fc5b4212e
+      internalID: 929450396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_129
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 10
+        width: 179
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebb2fbbc59226546af1c9231eec2726
+      internalID: -25021879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_130
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 10
+        width: 179
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92105f9c9a06034a907f2ed18b58827
+      internalID: 1415358761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_131
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 10
+        width: 179
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40205e30fb67dbf4e961030bf51a6d9a
+      internalID: -492584958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_132
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 10
+        width: 179
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b36a02173f21941b5494e0ec6f8591
+      internalID: 1218913561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ace SpriteSheet_133
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 10
+        width: 179
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db0068d90d527143b3a1dd96d3f8421
+      internalID: -489395032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Ace SpriteSheet_67: 2046443721
+      Ace SpriteSheet_8: -607944489
+      Ace SpriteSheet_43: 1760985985
+      Ace SpriteSheet_64: -1942747906
+      Ace SpriteSheet_38: 890315688
+      Ace SpriteSheet_59: 1979543965
+      Ace SpriteSheet_78: 967710892
+      Ace SpriteSheet_26: 1348895161
+      Ace SpriteSheet_71: -1911394178
+      Ace SpriteSheet_132: 1218913561
+      Ace SpriteSheet_91: -1534589272
+      Ace SpriteSheet_83: -1234175334
+      Ace SpriteSheet_128: 929450396
+      Ace SpriteSheet_80: -1116045160
+      Ace SpriteSheet_5: -1683865680
+      Ace SpriteSheet_12: 2119046498
+      Ace SpriteSheet_25: 1218257324
+      Ace SpriteSheet_40: 1591343257
+      Ace SpriteSheet_90: 1276933729
+      Ace SpriteSheet_39: -1317285252
+      Ace SpriteSheet_44: 1366164726
+      Ace SpriteSheet_110: -885032420
+      Ace SpriteSheet_3: 1760557754
+      Ace SpriteSheet_27: -1987688558
+      Ace SpriteSheet_49: 1601960238
+      Ace SpriteSheet_121: -1459154720
+      Ace SpriteSheet_123: -530768019
+      Ace SpriteSheet_94: -889344074
+      Ace SpriteSheet_14: 1139818982
+      Ace SpriteSheet_109: 1405144911
+      Ace SpriteSheet_32: -489463772
+      Ace SpriteSheet_88: 2111968415
+      Ace SpriteSheet_41: 42454187
+      Ace SpriteSheet_46: -817767745
+      Ace SpriteSheet_106: -1122612382
+      Ace SpriteSheet_114: -2017839221
+      Ace SpriteSheet_23: -1044333764
+      Ace SpriteSheet_62: -227545342
+      Ace SpriteSheet_19: 1888795734
+      Ace SpriteSheet_34: -801536002
+      Ace SpriteSheet_73: -531204168
+      Ace SpriteSheet_4: 1856766955
+      Ace SpriteSheet_51: -1502999346
+      Ace SpriteSheet_0: -1534751170
+      Ace SpriteSheet_55: 1514824855
+      Ace SpriteSheet_2: 1270758171
+      Ace SpriteSheet_60: 1969649913
+      Ace SpriteSheet_96: 960246405
+      Ace SpriteSheet_63: 1367281750
+      Ace SpriteSheet_111: -1122427495
+      Ace SpriteSheet_30: -978391950
+      Ace SpriteSheet_52: 273258607
+      Ace SpriteSheet_76: 1856236988
+      Ace SpriteSheet_79: -465701761
+      Ace SpriteSheet_133: -489395032
+      Ace SpriteSheet_10: 408207410
+      Ace SpriteSheet_36: 1438502289
+      Ace SpriteSheet_48: 2020587239
+      Ace SpriteSheet_45: -1953198181
+      Ace SpriteSheet_99: 1435491957
+      Ace SpriteSheet_92: -759796547
+      Ace SpriteSheet_105: -379457469
+      Ace SpriteSheet_69: 1285612063
+      Ace SpriteSheet_17: 1911142921
+      Ace SpriteSheet_113: 1751555332
+      Ace SpriteSheet_104: -544262854
+      Ace SpriteSheet_84: 158607957
+      Ace SpriteSheet_37: -1868563136
+      Ace SpriteSheet_21: -668480451
+      Ace SpriteSheet_115: 1678047124
+      Ace SpriteSheet_107: -372926980
+      Ace SpriteSheet_22: -1201142383
+      Ace SpriteSheet_72: 1392905000
+      Ace SpriteSheet_1: -1495472896
+      Ace SpriteSheet_15: 137280294
+      Ace SpriteSheet_61: 2073419966
+      Ace SpriteSheet_108: 975449760
+      Ace SpriteSheet_29: -415630483
+      Ace SpriteSheet_18: 420397266
+      Ace SpriteSheet_95: 326762828
+      Ace SpriteSheet_86: 1175571988
+      Ace SpriteSheet_93: -1994021431
+      Ace SpriteSheet_82: -157057698
+      Ace SpriteSheet_6: -144948598
+      Ace SpriteSheet_57: -358784825
+      Ace SpriteSheet_103: 1325935008
+      Ace SpriteSheet_124: -1853096813
+      Ace SpriteSheet_117: -362536074
+      Ace SpriteSheet_131: -492584958
+      Ace SpriteSheet_118: 1840161520
+      Ace SpriteSheet_125: 1643421997
+      Ace SpriteSheet_58: 160204038
+      Ace SpriteSheet_68: -1289340933
+      Ace SpriteSheet_11: -1404484760
+      Ace SpriteSheet_50: -1154513925
+      Ace SpriteSheet_101: 121313544
+      Ace SpriteSheet_127: 1806105506
+      Ace SpriteSheet_81: 249506247
+      Ace SpriteSheet_33: -1315652864
+      Ace SpriteSheet_74: -1156058468
+      Ace SpriteSheet_16: 1496009217
+      Ace SpriteSheet_42: 131806099
+      Ace SpriteSheet_65: 1274849556
+      Ace SpriteSheet_89: 2072128149
+      Ace SpriteSheet_47: -1939730469
+      Ace SpriteSheet_87: 1287995694
+      Ace SpriteSheet_98: 1126739959
+      Ace SpriteSheet_24: -255482088
+      Ace SpriteSheet_20: 1461544386
+      Ace SpriteSheet_13: 1755757729
+      Ace SpriteSheet_56: -478381466
+      Ace SpriteSheet_85: 1343783523
+      Ace SpriteSheet_54: 1712275797
+      Ace SpriteSheet_122: -1159473269
+      Ace SpriteSheet_53: -1166820007
+      Ace SpriteSheet_119: -438486801
+      Ace SpriteSheet_112: -240422312
+      Ace SpriteSheet_129: -25021879
+      Ace SpriteSheet_66: -1700854180
+      Ace SpriteSheet_77: 416476600
+      Ace SpriteSheet_102: -1979452580
+      Ace SpriteSheet_116: -1208800945
+      Ace SpriteSheet_100: -150546473
+      Ace SpriteSheet_7: -412393051
+      Ace SpriteSheet_35: 760477306
+      Ace SpriteSheet_97: 1968284539
+      Ace SpriteSheet_75: 2138279545
+      Ace SpriteSheet_28: -568644608
+      Ace SpriteSheet_126: 503160135
+      Ace SpriteSheet_120: 1016483440
+      Ace SpriteSheet_130: 1415358761
+      Ace SpriteSheet_31: -407262289
+      Ace SpriteSheet_9: 209792811
+      Ace SpriteSheet_70: -325065868
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
