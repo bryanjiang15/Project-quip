@@ -9,9 +9,9 @@ public class Deck : MonoBehaviour
     public static Deck instance;
 
     public List<Card> deckPiles;
+    public List<Card> cardsInHand;
     public List<Card> discardPile;
 
-    public HandSlot hand;
     public int handIndex;
 
     // Start is called before the first frame update
@@ -24,14 +24,6 @@ public class Deck : MonoBehaviour
     void Update()
     {
         
-    }
-    
-    public void ShuffleDeck()
-    {
-        deckPiles.AddRange(discardPile);
-        discardPile.Clear();
-
-        Shuffle.ShuffleList<Card>(deckPiles);
     }
 
     public void DrawCards(int handSize)
@@ -48,8 +40,13 @@ public class Deck : MonoBehaviour
         {
             Card drawnCard = deckPiles[0];
             deckPiles.RemoveAt(0);
-            hand.addCard(drawnCard);
+            
         }
+    }
+
+    public void DiscardCard(Card card)
+    {
+        discardPile.Add(card);
     }
 
 

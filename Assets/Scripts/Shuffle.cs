@@ -1,19 +1,20 @@
-﻿using UnityEditor;
-using UnityEngine;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-public static class Shuffle
+
+public static class ListExtensions
 {
-    public static void ShuffleList<T>(this IList<T> list)
+    public static void Shuffle<T>(this IList<T> list)
     {
-        var rng = new System.Random();
-        int n = list.Count;
-        while (n > 1)
-        {
-            n--;
-            int k = rng.Next(n + 1);
-            T value = list[k];
-            list[k] = list[n];
-            list[n] = value;
-        }
+        Random rnd = new Random();
+        for (var i = 0; i < list.Count; i++)
+            list.Swap(i, rnd.Next(i, list.Count));
+    }
+
+    public static void Swap<T>(this IList<T> list, int i, int j)
+    {
+        var temp = list[i];
+        list[i] = list[j];
+        list[j] = temp;
     }
 }

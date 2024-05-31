@@ -23,7 +23,7 @@ public class HandSlot : MonoBehaviour
     void DistributeCards()
     {
         
-        Card[] hand = GetComponentsInChildren<Card>();
+        CardUI[] hand = GetComponentsInChildren<CardUI>();
         if (hand.Length == 0)
             return;
 
@@ -54,7 +54,7 @@ public class HandSlot : MonoBehaviour
         }
     }
 
-    public void addCard(Card card)
+    public void addCard(CardUI card)
     {
         card.transform.parent = transform;
         card.gameObject.SetActive(true);
@@ -66,9 +66,9 @@ public class HandSlot : MonoBehaviour
         Card[] hand = GetComponentsInChildren<Card>();
     }
 
-    public void addCards(Card[] cards)
+    public void addCards(CardUI[] cards)
     {
-        foreach(Card card in cards){
+        foreach(CardUI card in cards){
             card.transform.parent = transform;
         }
         DistributeCards();
