@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Card : ScriptableObject
+[CreateAssetMenu(fileName = "Card", menuName = "ScriptableObjects/Card", order = 1)]
+public class Card : ScriptableObject
 {
     public string cardTitle;
     //public bool isUpgraded;
-    public CardDescription cardDescription;
-    public CardAmount cardCost;
-    public CardAmount cardEffect;
-    public CardAmount buffAmount;
+    public string cardDescription;
+    public Letter[] letterCosts;
+
     public Sprite cardIcon;
     public CardType cardType;
     public enum CardType { Attack, Skill, Power }
@@ -17,21 +17,7 @@ public abstract class Card : ScriptableObject
     public enum CardClass { ironChad, silent, colorless, curse, status }*/
     public CardTargetType cardTargetType;
     public enum CardTargetType { self, enemy, allEnemy };
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-    protected abstract void OnMouseDown();
-
-    protected abstract void OnMouseUp();
-
-    protected abstract void playCard();
 
     /*private void OnMouseDown()
     {
