@@ -14,7 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardTitle: Spite
   cardDescription: Deal 6 damage
-  letterCosts: []
+  letterCosts: 11
   cardIcon: {fileID: 21300000, guid: d3e0a431590341c40ba809bea662cdd6, type: 3}
   cardType: 0
   cardTargetType: 1
+  usableWithoutTarget: 0
+  exhaustAfterPlay: 0
+  cardActionDataList:
+  - cardActionType: 0
+    actionTargetType: 1
+    actionValue: 6

@@ -3,22 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class BattleManager : MonoBehaviour
 {
+    [Header("Prefabs")]
+    [SerializeField] GameObject letterPrefab;
+
     [Header("Cards")]
     public List<Card> deck;
+    public List<Dice> dices;
     public List<Card> drawPile = new List<Card>();
     public List<Card> cardsInHand = new List<Card>();
     public List<Card> discardPile = new List<Card>();
-    public List<Dice> dices = new List<Dice>();
+    public List<Letter> letters = new List<Letter>();
     public List<CardUI> cardUis = new List<CardUI>();
     public CardUI selectedCard;
+    public Letter selectedLetter;
 
     [Header("Stats")]
     public Character cardTarget;
     public Character player;
     public int maxHandSize = 10;
+    public int maxLetterCount = 10;
     public int handSize = 5;
     public Turn turn;
     public enum Turn { Player, Enemy };
@@ -30,12 +37,14 @@ public class BattleManager : MonoBehaviour
 
     [Header("UI")]
     public Button endTurnButton;
-    public TMP_Text energyText;
+    public Transform letterSlot;
     public Transform topParent;
     public Transform enemyParent;
     //public EndScreen endScreen;
 
     GameManager gameManager;
+    public Action OnAllyTurnStarted;
+    public Action OnEnemyTurnStarted;
 
     [SerializeField]
     TextMeshProUGUI turnText;
@@ -46,6 +55,8 @@ public class BattleManager : MonoBehaviour
     private void Awake()
     {
         gameManager = GameManager.instance;
+        CardActionProcessor.Initialize();
+        EnemyActionProcessor.Initialize();
         instance = this;
     }
 
@@ -56,6 +67,7 @@ public class BattleManager : MonoBehaviour
 
     public void BeginBattle()
     {
+        
         round = 1;
         turn = Turn.Player;
         turnText.SetText("Turn " + round);
@@ -70,11 +82,12 @@ public class BattleManager : MonoBehaviour
 
         foreach (Enemy e in eArr) { enemies.Add(e); }
 
-        foreach (Card card in cardsInHand)
+        BuildCharacters();
+
+        foreach (CardUI card in cardUis)
         {
             DiscardCard(card);
         }
-
         
 
         discardPile = new List<Card>();
@@ -83,14 +96,18 @@ public class BattleManager : MonoBehaviour
         drawPile.AddRange(deck);
         ShuffleCards();
         DrawCards(handSize);
+        DrawLetters();
 
-        
+        OnAllyTurnStarted?.Invoke();
     }
 
-    // Update is called once per frame
-    void Update()
+    void BuildCharacters()
     {
-        
+        player.BuildCharacter();
+        foreach(Enemy e in enemies)
+        {
+            e.BuildCharacter();
+        }
     }
 
     public void changeTurn()
@@ -98,6 +115,8 @@ public class BattleManager : MonoBehaviour
         if (turn == Turn.Player)
         {
             turn = Turn.Enemy;
+            OnEnemyTurnStarted?.Invoke();
+
             endTurnButton.enabled = false;
 
             #region discard hand
@@ -113,20 +132,16 @@ public class BattleManager : MonoBehaviour
                 cardUI.gameObject.SetActive(false);
                 cardsInHand.Remove(cardUI.card);
             }*/
+            letters.Clear();
+
+            //TODO Animation for discard
+            for (int i = letterSlot.childCount - 1; i >= 0; i--)
+            {
+                Destroy(letterSlot.GetChild(i).gameObject);
+            }
             #endregion
 
-            /*foreach (Enemy e in enemies)
-            {
-                if (e.thisEnemy == null)
-                    e.thisEnemy = e.GetComponent<Fighter>();
-
-                //reset block
-                e.thisEnemy.currentBlock = 0;
-                e.thisEnemy.fighterHealthBar.DisplayBlock(0);
-            }
-
-            player.EvaluateBuffsAtTurnEnd();
-            StartCoroutine(HandleEnemyTurn());*/
+            StartCoroutine(EnemyTurnRoutine());
         }
         else
         {
@@ -134,7 +149,9 @@ public class BattleManager : MonoBehaviour
             {
                 //e.DisplayIntent();
             }
+
             turn = Turn.Player;
+            OnAllyTurnStarted?.Invoke();
 
             //reset block
             /*player.currentBlock = 0;
@@ -144,6 +161,7 @@ public class BattleManager : MonoBehaviour
 
             endTurnButton.enabled = true;
             DrawCards(maxHandSize);
+            DrawLetters();
 
             turnText.text = "Player's Turn";
             //banner.Play("bannerOut");
@@ -158,6 +176,11 @@ public class BattleManager : MonoBehaviour
             if (drawPile.Count < 1)
                 ShuffleCards();
 
+            if(drawPile.Count < 1)
+            {
+                return;
+            }
+
             cardsInHand.Add(drawPile[0]);
             DisplayCardInHand(drawPile[0]);
             drawPile.Remove(drawPile[0]);
@@ -165,10 +188,13 @@ public class BattleManager : MonoBehaviour
             cardsDrawn++;
         }
     }
-    public void DiscardCard(Card card)
+    public void DiscardCard(CardUI cardUI)
     {
-        cardsInHand.Remove(card);
-        discardPile.Add(card);
+        cardUI.ResetCard();
+        cardUI.gameObject.SetActive(false);
+        cardsInHand.Remove(cardUI.card);
+        cardsInHand.Remove(cardUI.card);
+        discardPile.Add(cardUI.card);
     }
 
     public void ShuffleCards()
@@ -176,6 +202,32 @@ public class BattleManager : MonoBehaviour
         drawPile.AddRange(discardPile);
         drawPile.Shuffle();
         discardPile = new List<Card>();
+    }
+    public void DrawLetters()
+    {
+        letters.Clear(); // Clear the list from previous results
+
+        // Loop through each dice in the list
+        foreach (Dice dice in dices)
+        {
+            // Roll the dice and store the result
+            LetterData letterData = dice.Roll();
+            if (letterData != null)
+            {
+                GameObject letterObject = Instantiate(letterPrefab);
+                Letter letter = letterObject.GetComponent<Letter>();
+                letter.setUpLetter(letterData);
+                letters.Add(letter);
+
+                letterObject.transform.SetParent(letterSlot);
+                
+            }
+        }
+    }
+
+    public void Discardletter(Letter letter)
+    {
+        letters.Remove(letter);
     }
 
     public void DisplayCardInHand(Card card)
@@ -189,14 +241,107 @@ public class BattleManager : MonoBehaviour
     {
         //Debug.Log("played card");
         //GoblinNob is enraged
-       
 
-        //cardActions.PerformAction(cardUI.card, cardTarget);
+        StartCoroutine(CardUseRoutine(cardUI, player, cardTarget, enemies));
+        //Instantiate(cardUI.discardEffect, cardUI.transform.position, Quaternion.identity, topParent);      
+    }
 
-        //Instantiate(cardUI.discardEffect, cardUI.transform.position, Quaternion.identity, topParent);
-        selectedCard = null;
-        cardUI.gameObject.SetActive(false);
-        cardsInHand.Remove(cardUI.card);
-        DiscardCard(cardUI.card);
+    private IEnumerator CardUseRoutine(CardUI cardUI, Character self, Character targetCharacter, List<Enemy> allEnemies)
+    {
+        bool played = false;
+        foreach (var playerAction in cardUI.card.cardActionDataList)
+        {
+            
+            var targetList = DetermineTargets(targetCharacter, allEnemies, player, playerAction);
+            if (targetList == null)
+            {
+                break;
+            }
+            else
+            {
+                played = true;
+                foreach (var target in targetList)
+                                CardActionProcessor.GetAction(playerAction.CardActionType)
+                                    .DoAction(new CardActionParameters(playerAction.ActionValue,
+                                        target, self));
+            }
+        }
+        if (played)
+        {
+            selectedCard = null;
+            
+            DiscardCard(cardUI);
+        }
+        
+        
+
+        yield return null;
+    }
+
+    private static List<Character> DetermineTargets(Character targetCharacter, List<Enemy> allEnemies, Character player, CardActionData playerAction)
+    {
+        List<Character> targetList = new List<Character>();
+        switch (playerAction.ActionTargetType)
+        {
+            case CardTargetType.enemy:
+                if (targetCharacter == null) return null;
+                targetList.Add(targetCharacter);
+                break;
+/*            case CardTargetType.Ally:
+                targetList.Add(targetCharacter);
+                break;*/
+            case CardTargetType.allEnemy:
+                foreach (var enemyBase in allEnemies)
+                    targetList.Add(enemyBase);
+                break;
+            case CardTargetType.self:
+                targetList.Add(player);
+                break;
+            /*case ActionTargetType.AllAllies:
+                foreach (var allyBase in allAllies)
+                    targetList.Add(allyBase);
+                break;*/
+            /*case CardTargetType.RandomEnemy:
+                if (allEnemies.Count > 0)
+                    targetList.Add(allEnemies.RandomItem());
+
+                break;
+            case ActionTargetType.RandomAlly:
+                if (allAllies.Count > 0)
+                    targetList.Add(allAllies.RandomItem());
+                break;*/
+            default:
+                break;
+        }
+
+        return targetList;
+    }
+
+    public void EndFight(bool win)
+    {
+        //if (!win)
+            //gameover.SetActive(true);
+
+        //player.ResetBuffs();
+        //HandleEndScreen();
+
+        //gameManager.UpdateFloorNumber();
+        //gameManager.UpdateGoldNumber(enemies[0].goldDrop);
+;
+    }
+
+    private IEnumerator EnemyTurnRoutine()
+    {
+        var waitDelay = new WaitForSeconds(0.7f);
+        yield return waitDelay;
+
+        foreach (var currentEnemy in enemies)
+        {
+            yield return currentEnemy.StartCoroutine(nameof(currentEnemy.ActionRoutine));
+            yield return waitDelay;
+        }
+
+        changeTurn();
+
     }
 }

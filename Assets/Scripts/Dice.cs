@@ -2,23 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Dice : MonoBehaviour
+[CreateAssetMenu(fileName = "Dice", menuName = "ScriptableObjects/Dice", order = 2)]
+public class Dice : ScriptableObject
 {
     public int faceAmount;
-    public List<char> faces;
-    // Use this for initialization
-    void Start()
-    {
+    public List<LetterData> faces;
 
+    public LetterData Roll()
+    {
+        if (faces.Count == 0)
+        {
+            Debug.LogError("No face letters assigned to dice!");
+            return null;
+        }
+
+        // Get a random face letter
+        int randomIndex = Random.Range(0, faceAmount);
+        return faces[randomIndex];
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    public abstract void Roll();
-
-    public abstract void UseDice();
 }
