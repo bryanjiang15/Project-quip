@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecaf0b41c7c30f741bb4f6d3a9380a62, type: 3}
+  m_Name: PyreFurnace
+  m_EditorClassIdentifier: 
+  cardTitle: Pyre Furnace
+  cardDescription: Gain 1 strength
+  IngredientCosts:
+  - {fileID: 11400000, guid: c55927c2f0f3b124493e20fe441dab13, type: 2}
+  - {fileID: 11400000, guid: c55927c2f0f3b124493e20fe441dab13, type: 2}
+  cardIcon: {fileID: 21300000, guid: 66d3258e1c73e724988b709a8b1c17e7, type: 3}
+  cardType: 2
+  cardTargetType: 0
+  usableWithoutTarget: 1
+  exhaustAfterPlay: 0
+  cardActionDataList:
+  - cardActionType: 3
+    actionTargetType: 0
+    actionValue: 1

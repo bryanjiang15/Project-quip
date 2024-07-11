@@ -6,13 +6,13 @@ using UnityEngine;
 public class Dice : ScriptableObject
 {
     public int faceAmount;
-    public List<LetterData> faces;
+    public List<IngredientData> faces;
 
-    public LetterData Roll()
+    public IngredientData Roll()
     {
         if (faces.Count == 0)
         {
-            Debug.LogError("No face letters assigned to dice!");
+            Debug.LogError("No face assigned to dice!");
             return null;
         }
 

@@ -8,7 +8,8 @@ using System;
 public class BattleManager : MonoBehaviour
 {
     [Header("Prefabs")]
-    [SerializeField] GameObject letterPrefab;
+    [SerializeField] GameObject ingredientPrefab;
+    [SerializeField] GameObject cardUIPrefab;
 
     [Header("Cards")]
     public List<Card> deck;
@@ -16,16 +17,16 @@ public class BattleManager : MonoBehaviour
     public List<Card> drawPile = new List<Card>();
     public List<Card> cardsInHand = new List<Card>();
     public List<Card> discardPile = new List<Card>();
-    public List<Letter> letters = new List<Letter>();
+    public List<Ingredient> ingredients = new List<Ingredient>();
     public List<CardUI> cardUis = new List<CardUI>();
     public CardUI selectedCard;
-    public Letter selectedLetter;
+    public Ingredient selectedIngredient;
 
     [Header("Stats")]
     public Character cardTarget;
     public Character player;
     public int maxHandSize = 10;
-    public int maxLetterCount = 10;
+    public int maxIngredientCount = 10;
     public int handSize = 5;
     public Turn turn;
     public enum Turn { Player, Enemy };
@@ -37,7 +38,7 @@ public class BattleManager : MonoBehaviour
 
     [Header("UI")]
     public Button endTurnButton;
-    public Transform letterSlot;
+    public Transform ingredientSlot;
     public Transform topParent;
     public Transform enemyParent;
     //public EndScreen endScreen;
@@ -96,7 +97,7 @@ public class BattleManager : MonoBehaviour
         drawPile.AddRange(deck);
         ShuffleCards();
         DrawCards(handSize);
-        DrawLetters();
+        DrawIngredients();
 
         OnAllyTurnStarted?.Invoke();
     }
@@ -132,12 +133,12 @@ public class BattleManager : MonoBehaviour
                 cardUI.gameObject.SetActive(false);
                 cardsInHand.Remove(cardUI.card);
             }*/
-            letters.Clear();
+            ingredients.Clear();
 
             //TODO Animation for discard
-            for (int i = letterSlot.childCount - 1; i >= 0; i--)
+            for (int i = ingredientSlot.childCount - 1; i >= 0; i--)
             {
-                Destroy(letterSlot.GetChild(i).gameObject);
+                Destroy(ingredientSlot.GetChild(i).gameObject);
             }
             #endregion
 
@@ -161,7 +162,7 @@ public class BattleManager : MonoBehaviour
 
             endTurnButton.enabled = true;
             DrawCards(maxHandSize);
-            DrawLetters();
+            DrawIngredients();
 
             turnText.text = "Player's Turn";
             //banner.Play("bannerOut");
@@ -192,9 +193,11 @@ public class BattleManager : MonoBehaviour
     {
         cardUI.ResetCard();
         cardUI.gameObject.SetActive(false);
+        //cardUI.gameObject.transform.SetAsLastSibling();
         cardsInHand.Remove(cardUI.card);
         cardsInHand.Remove(cardUI.card);
         discardPile.Add(cardUI.card);
+
     }
 
     public void ShuffleCards()
@@ -203,41 +206,54 @@ public class BattleManager : MonoBehaviour
         drawPile.Shuffle();
         discardPile = new List<Card>();
     }
-    public void DrawLetters()
+    public void DrawIngredients()
     {
-        letters.Clear(); // Clear the list from previous results
+        ingredients.Clear(); // Clear the list from previous results
 
         // Loop through each dice in the list
         foreach (Dice dice in dices)
         {
             // Roll the dice and store the result
-            LetterData letterData = dice.Roll();
-            if (letterData != null)
+            IngredientData ingredientData = dice.Roll();
+            if (ingredientData != null)
             {
-                GameObject letterObject = Instantiate(letterPrefab);
-                Letter letter = letterObject.GetComponent<Letter>();
-                letter.setUpLetter(letterData);
-                letters.Add(letter);
+                GameObject ingredientObject = Instantiate(ingredientPrefab);
+                Ingredient ingredient = ingredientObject.GetComponent<Ingredient>();
+                ingredient.setUpIngredient(ingredientData);
+                ingredients.Add(ingredient);
 
-                letterObject.transform.SetParent(letterSlot);
+                ingredientObject.transform.SetParent(ingredientSlot);
                 
             }
         }
     }
 
-    public void Discardletter(Letter letter)
+    public void DiscardIngredient(Ingredient ingredient)
     {
-        letters.Remove(letter);
+        ingredients.Remove(ingredient);
     }
 
     public void DisplayCardInHand(Card card)
     {
-        CardUI cardUI = cardUis[cardsInHand.Count - 1];
-        cardUI.LoadCard(card);
-        cardUI.gameObject.SetActive(true);
+        CardUI cardUI = null;
+        foreach(CardUI c in cardUis)
+        {
+            if (!c.gameObject.activeInHierarchy)
+            {
+                cardUI = c;
+                break;
+            }
+        }
+        if (cardUI)
+        {
+            cardUI.LoadCard(card);
+            cardUI.gameObject.SetActive(true);
+        }
+        
     }
 
     public void PlayCard(CardUI cardUI)
+
     {
         //Debug.Log("played card");
         //GoblinNob is enraged

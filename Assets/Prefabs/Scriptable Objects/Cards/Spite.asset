@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecaf0b41c7c30f741bb4f6d3a9380a62, type: 3}
   m_Name: Spite
   m_EditorClassIdentifier: 
-  cardTitle: Spite
+  cardTitle: Elemental Blast
   cardDescription: Deal 6 damage
-  letterCosts: 11
+  IngredientCosts:
+  - {fileID: 11400000, guid: 1b26e6e6024a7444d8cf18badd4183cc, type: 2}
+  - {fileID: 11400000, guid: 1b26e6e6024a7444d8cf18badd4183cc, type: 2}
   cardIcon: {fileID: 21300000, guid: d3e0a431590341c40ba809bea662cdd6, type: 3}
   cardType: 0
   cardTargetType: 1

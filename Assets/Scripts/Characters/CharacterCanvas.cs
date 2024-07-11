@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterCanvas : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI currentHealthText;
+    [SerializeField] private Slider healthbar;
 
     // Start is called before the first frame update
     void Start()
@@ -32,5 +34,10 @@ public class CharacterCanvas : MonoBehaviour
             TargetCanvas.worldCamera = Camera.main;*/
     }
 
-    public void UpdateHealthText(int currentHealth, int maxHealth) => currentHealthText.text = $"{currentHealth}/{maxHealth}";
+    public void UpdateHealthText(int currentHealth, int maxHealth)
+    {
+        currentHealthText.text = $"{currentHealth}/{maxHealth}";
+        healthbar.maxValue = maxHealth;
+        healthbar.value = currentHealth;
+    }
 }

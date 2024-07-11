@@ -10,7 +10,7 @@ public class Card : ScriptableObject
     public string cardTitle;
     //public bool isUpgraded;
     public string cardDescription;
-    public string letterCosts;
+    public List<RequirementData> IngredientCosts;
     public Sprite cardIcon;
 
     public CardType cardType;

@@ -14,15 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faceAmount: 6
   faces:
-  - type: 2
-    letters: A
-  - type: 2
-    letters: E
-  - type: 2
-    letters: I
-  - type: 1
-    letters: aeiou
-  - type: 2
-    letters: O
-  - type: 2
-    letters: U
+  - {fileID: 11400000, guid: 1d212d1ffce233b45ac9fd1084d2ba53, type: 2}
+  - {fileID: 11400000, guid: 467261d61a1c7a749af058fd9c57fd45, type: 2}
+  - {fileID: 11400000, guid: 1d212d1ffce233b45ac9fd1084d2ba53, type: 2}
+  - {fileID: 11400000, guid: 467261d61a1c7a749af058fd9c57fd45, type: 2}
+  - {fileID: 11400000, guid: 1d212d1ffce233b45ac9fd1084d2ba53, type: 2}
+  - {fileID: 11400000, guid: 467261d61a1c7a749af058fd9c57fd45, type: 2}

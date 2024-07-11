@@ -15,28 +15,29 @@ public class CardUI : MonoBehaviour
     Animator animator;
 
     public GameObject requirementSlots;
-    public LetterRequirement letterRequirementPrefab;
+    public IngredientRequirement IngredientRequirementPrefab;
+
 
     void Awake()
     {
         battleManager = FindObjectOfType<BattleManager>();
     }
 
-    public void SetupRequirements(string letterCosts)
+    public void SetupRequirements(List<RequirementData> requirements)
     {
-        foreach (char c in letterCosts)
+        foreach (RequirementData r in requirements)
         {
-            LetterRequirement l = Instantiate(letterRequirementPrefab);
-            l.SetUpRequirement(c);
+            IngredientRequirement l = Instantiate(IngredientRequirementPrefab);
+            l.SetUpRequirement(r);
             l.transform.SetParent(requirementSlots.transform);
         }
     }
 
     public bool IsPlayable()
     {
-        foreach (LetterRequirement l in requirementSlots.GetComponentsInChildren<LetterRequirement>())
+        foreach (IngredientRequirement req in requirementSlots.GetComponentsInChildren<IngredientRequirement>())
         {
-            if (!l.isSatisfied)
+            if (!req.isSatisfied)
             {
                 return false;
             }
@@ -52,7 +53,7 @@ public class CardUI : MonoBehaviour
         cardDescriptionText.text = card.cardDescription;
         //cardCostText.text = card.letterCosts;
         cardImage.sprite = card.cardIcon;
-        SetupRequirements(card.letterCosts);
+        SetupRequirements(card.IngredientCosts);
     }
     public void SelectCard()
     {
@@ -90,10 +91,10 @@ public class CardUI : MonoBehaviour
 
     public void ResetCard()
     {
-        var letters = GetComponentsInChildren<LetterRequirement>();
-        for (int i = letters.Length - 1; i >= 0; i--)
+        var reqs = GetComponentsInChildren<IngredientRequirement>();
+        for (int i = reqs.Length - 1; i >= 0; i--)
         {
-            Destroy(letters[i].gameObject);
+            Destroy(reqs[i].gameObject);
         }
     }
 }

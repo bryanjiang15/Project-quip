@@ -6,21 +6,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Letter : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class Ingredient : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
 
-    public LetterData letterData;
-    LetterRequirement targetedRequirment;
-    TextMeshProUGUI letterText;
-
+    public IngredientData ingredientData;
     public BattleManager battleManager;
+    public GraphicRaycaster graphicRaycaster;
+
+    IngredientRequirement targetedRequirment;
+    Image image;
+
+    
     RectTransform rectTransform;
     RectTransform parentTransform;
-    bool letterActive = true;
+    bool ingredientActive = true;
 
     Canvas canvas;
     CanvasGroup canvasGroup;
-    public GraphicRaycaster graphicRaycaster;
+    
 
     bool dragging;
     // Start is called before the first frame update
@@ -28,36 +31,29 @@ public class Letter : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
     {
         battleManager = FindObjectOfType<BattleManager>();
         rectTransform = GetComponent<RectTransform>();
-        parentTransform = GameObject.Find("LetterSlots").GetComponent<RectTransform>();
+        parentTransform = GameObject.Find("IngredientSlots").GetComponent<RectTransform>();
         canvas = GameObject.Find("/Canvas").GetComponent<Canvas>();
         canvasGroup = GetComponent<CanvasGroup>();
         graphicRaycaster = GameObject.Find("/Canvas").GetComponent<GraphicRaycaster>();
-        letterText = GetComponentInChildren<TextMeshProUGUI>();
-
-        if (letterData != null)
-        {
-            letterData.initialize();
-            letterText.text = letterData.RepresentationLetter;
-        }
+        image = GetComponent<Image>();
     }
 
-    public void setUpLetter(LetterData data)
+    public void setUpIngredient(IngredientData data)
     {
-        letterData = data;
-        letterData.initialize();
-        letterText.text = letterData.RepresentationLetter;
-    }
+        ingredientData = data;
+        image.sprite = ingredientData.Image;
+    } 
 
-    public void SelectLetter()
+    public void SelectIngredient()
     {
         //Debug.Log("card is selected");
-        battleManager.selectedLetter = this;
+        battleManager.selectedIngredient = this;
     }
 
-    public void DeselectLetter()
+    public void DeselectIngredient()
     {
         //Debug.Log("card is deselected");
-        battleManager.selectedLetter = null;
+        battleManager.selectedIngredient = null;
         //animator.Play("HoverOffCard");
     }
 
@@ -65,7 +61,7 @@ public class Letter : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (letterActive)
+        if (ingredientActive)
         {
             dragging = true;
             transform.SetParent(canvas.transform);
@@ -77,7 +73,7 @@ public class Letter : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (letterActive)
+        if (ingredientActive)
         {
             // Convert the screen point where the cursor is to a point in the rectTransform's space
             RectTransformUtility.ScreenPointToLocalPointInRectangle(canvas.transform as RectTransform, Input.mousePosition, canvas.worldCamera, out targetPosition);
@@ -92,15 +88,16 @@ public class Letter : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
             {
                 
                 GameObject hovered = result.gameObject;
-                LetterRequirement req = hovered.GetComponent<LetterRequirement>();
+                IngredientRequirement req = hovered.GetComponent<IngredientRequirement>();
 
                 if(req != null)
                 {
                     targetedRequirment = req;
                     hoveringRequirement = true;
                     targetPosition = hovered.transform.position - new Vector3(0, 2*canvas.transform.position.y);
+                    break;
                 }
-            
+
             }
 
             if (!hoveringRequirement)
@@ -117,13 +114,13 @@ public class Letter : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
         if (targetedRequirment != null)
         {
             
-            if (targetedRequirment.UseLetter(this))
+            if (targetedRequirment.UseIngredient(this))
             {
                 transform.SetParent(targetedRequirment.transform);
                 rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
                 rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
                 transform.localPosition = Vector3.zero;
-                letterActive = false;
+                ingredientActive = false;
                 return;
             }
         }
@@ -138,7 +135,6 @@ public class Letter : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
         if(dragging) rectTransform.anchoredPosition = Vector2.Lerp(rectTransform.anchoredPosition, targetPosition, 12 * Time.deltaTime);
     }
 }
-public enum LetterType { Consonant, Vowel, Specific}
 
 
 

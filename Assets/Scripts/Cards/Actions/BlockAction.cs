@@ -1,19 +1,22 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class BlockAction : CardActionBase
+namespace Cards.Actions
 {
-    public override CardActionType ActionType => CardActionType.Block;
-    public override void DoAction(CardActionParameters actionParameters)
+    public class BlockAction : CardActionBase
     {
-        var newTarget = actionParameters.TargetCharacter
-                ? actionParameters.TargetCharacter
-                : actionParameters.SelfCharacter;
-        if (!newTarget) return;
+        public override CardActionType ActionType => CardActionType.Block;
+        public override void DoAction(CardActionParameters actionParameters)
+        {
+            var newTarget = actionParameters.TargetCharacter
+                    ? actionParameters.TargetCharacter
+                    : actionParameters.SelfCharacter;
+            if (!newTarget) return;
 
-        newTarget.CharacterStats.ApplyStatus(StatusType.Block,
-                Mathf.RoundToInt(actionParameters.Value + actionParameters.SelfCharacter.CharacterStats
-                    .StatusDict[StatusType.Dexterity].StatusValue));
+            newTarget.CharacterStats.ApplyStatus(StatusType.Block,
+                    Mathf.RoundToInt(actionParameters.Value + actionParameters.SelfCharacter.CharacterStats
+                        .StatusDict[StatusType.Dexterity].StatusValue));
 
+        }
     }
 }

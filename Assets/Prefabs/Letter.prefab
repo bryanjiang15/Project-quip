@@ -204,7 +204,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -847597513, guid: 4eddd8529a165be46838df3e925be1aa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b13598056441ac54ebb3173693f5e62f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -226,9 +226,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee2db5142cbba0c4da0956ee526a1db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letters: G
-  type: 2
+  letterData:
+    type: 0
+    letters: 
   battleManager: {fileID: 0}
+  graphicRaycaster: {fileID: 0}
 --- !u!225 &1622513235303644167
 CanvasGroup:
   m_ObjectHideFlags: 0

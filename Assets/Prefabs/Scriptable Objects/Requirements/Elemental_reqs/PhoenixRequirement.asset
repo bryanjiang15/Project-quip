@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c41536d7a8188e4bae55493078722fa, type: 3}
+  m_Name: PhoenixRequirement
+  m_EditorClassIdentifier: 
+  type: 1
+  isSpecific: 1
+  specificIngredient: {fileID: 11400000, guid: ebf83353b47fd924c8c7fd3b07936993, type: 2}
+  image: {fileID: 21300000, guid: eda15f5b18f87d149afecf073a0ee4f7, type: 3}
